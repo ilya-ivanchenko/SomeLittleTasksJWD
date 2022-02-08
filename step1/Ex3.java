@@ -5,7 +5,7 @@ public class Ex3 {
         int a = 3;
         int b = 5;
         int S,P;
-
+//
         if (a>0 && b>0) {
             P = (int) Math.sqrt((a * a + b * b)) + a + b;
             S = (a * b) / 2;
@@ -13,3 +13,6 @@ public class Ex3 {
         } else System.out.println("Такой треугольник не может существовать!");
     }
 }
+
+
+
