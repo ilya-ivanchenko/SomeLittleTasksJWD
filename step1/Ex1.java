@@ -10,7 +10,7 @@ class Ex1 {
                 a2 =  (a - (a0*1000 + a1*100))/10;
                 a3 = a - (a0*1000 + a1*100 + a2*10);
 
-                if ((a0+a1) == (a2 + a3)) System.out.println("true");
+                if ((a0 + a1) == (a2 + a3)) System.out.println("true");
                 else System.out.println("false");
 
         }
