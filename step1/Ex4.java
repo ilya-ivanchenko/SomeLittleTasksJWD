@@ -10,5 +10,4 @@ public class Ex4 {
         System.out.println("true");
         else System.out.println("false");
     }
-
 }

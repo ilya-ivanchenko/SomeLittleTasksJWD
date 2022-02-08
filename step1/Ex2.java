@@ -12,5 +12,4 @@ public class Ex2 {
             System.out.println("Результат вычислений: " + result);
         } else System.out.println("Неверные исходные данные");
     }
-
 }
