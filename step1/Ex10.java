@@ -1,25 +1,36 @@
 package JWD.step1;
 
+import java.util.Scanner;
+
 public class Ex10 {
     public static void main(String[] args) {
-        int arr[][] = new int [8][8];
-        int b,c,d;
+        int i, j, n;
+        Scanner sc = new Scanner(System.in);
+        System.out.print(" Введите размер матрицы n*n: ");
+        n = sc.nextInt();
+        int arr[][] = new int[n][n];
 
+        for (i = 0; i <= n - 1; i++) {
+               if (i % 2 == 0) {
+                   for (j = 0; j <= n-1; j++) {
+                       arr[i][j] = j + 1;
+                   }
+               } else {
+                   for (j = 0; j <= n-1; j++) {
+                   arr[i][j] = n-j ;
+                   }
+               }
+         }
 
-        for (b = 0; b<arr.length; b++) {
-            if (b%2 == 0) {
-                c = b;
-                for (d = 0; d < arr.length; d++) {
-                    arr[b][d] = ++c;
+            for (i = 0; i <= n - 1; i++) {
+                System.out.println();
+                for (j = 0; j <= n - 1; j++) {
+                    System.out.print(arr[i][j] + " ");
                 }
             }
         }
-
-        for (b=0; b<arr.length; b++) {
-            System.out.println();
-            for(d=0; d< arr.length; d++) {
-                System.out.print(arr[b][d] + " ");
-            }
-        }
-    }
 }
+
+
+
+
