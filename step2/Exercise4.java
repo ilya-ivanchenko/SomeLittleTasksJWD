@@ -12,17 +12,13 @@ public class Exercise4 {
     }
 }
 
-
+//
 class Logics {
     static boolean result(int i, int j) {
 
         /* Разобьем заданную область на две. */
-        if (((i >= -4 && i <= 4) && (j >= -3 && j <= 0))
-                || ((i >= -2 && i <= 2) && (j >= 0 && j <= 4))) {
-            return true;
-        } else {
-            return false;
-        }
+        return ((i >= -4 && i <= 4) && (j >= -3 && j <= 0))
+                || ((i >= -2 && i <= 2) && (j >= 0 && j <= 4));
     }
 }
 
