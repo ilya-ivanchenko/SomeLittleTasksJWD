@@ -12,7 +12,7 @@ public class Exercise4 {
     }
 }
 
-//
+
 class Logics {
     static boolean result(int i, int j) {
 
